@@ -1,1 +1,174 @@
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #0F172A;
+    background-color: #FFFFFF;
+    line-height: 1.5;
+}
+
+
+.site-header {
+    background-color: #E9D4CA;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a {
+    color: #0F172A;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+.container {
+    padding: 24px;
+}
+
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.hero-banner {
+    background-color: #F2E8F0;
+    padding: 32px;
+}
+
+.hero-banner h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.hero-banner p {
+    margin-bottom: 20px;
+}
+
+.hero-sidebar {
+    background-color: #E9D4CA;
+    padding: 32px;
+}
+
+.hero-sidebar h2 {
+    margin-bottom: 8px;
+}
+
+
+.btn-primary,
+.btn-card {
+    display: inline-block;
+    background-color: #4C5B46;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.cards-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.card {
+    background-color: #FFF8F1;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    margin-bottom: 24px;
+}
+
+.btn-card {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+
+.site-footer {
+    background-color: #4C5B46;
+    color: white;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+
+@media (min-width: 768px) {
+
+    .site-header {
+        flex-direction: row;
+        align-items: center;
+        padding: 24px 40px;
+    }
+
+    .container {
+        padding: 24px 40px;
+    }
+
+    .hero-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .cards-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .site-footer {
+        flex-direction: row;
+        align-items: center;
+        padding: 24px 40px;
+    }
+}
+
